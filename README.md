@@ -6,7 +6,7 @@ A custom character sheet for the **Grimwild** tabletop RPG, designed for use wit
 <img src="https://github.com/user-attachments/assets/b447f2df-7922-4e4d-aaae-b92fd7161916" align="right" width="400" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
 <div style="margin-right: 430px;">
 
-</div>
+
 - **Attribute Rolling**: Click attribute names (Brawn, Agility, Wits, Presence) to roll dice for action/defense rolls
 - **Thorn System**: Auto handling of difficulty and mark/harm thorns
 - **Pool Rolling**: Build and roll dice pools while the sheet automatically determines drops
@@ -15,7 +15,7 @@ A custom character sheet for the **Grimwild** tabletop RPG, designed for use wit
 - **Condition Management**: Bloodied and Rattled condition tracking
 - **Custom Roll Templates**: Styled roll outputs
 
-
+</div>
 <br clear="right">
 
 ## Installation
