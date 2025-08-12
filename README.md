@@ -59,4 +59,4 @@ This character sheet has been designed and created for the Grimwild RPG system b
 
 ## Updates
 
-Other feature I might add in the future (or would appreciate others assisting with) would be a second tab of the sheet for tracking addition elements (arcana, treasure, etc.), as well as proper integration for those without API support. 
+Other features I might add in the future (or would appreciate others assisting with) would be a second tab of the sheet for tracking addition elements (arcana, treasure, etc.), as well as proper integration for those without API support. Also want to add more GM support in terms of managing multiple pools over time, but not sure when/if I'll work on that. 
