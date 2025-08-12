@@ -55,7 +55,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Credits
 
-This character sheet has been designed and created for the Grimwild RPG system based on the work of J.D. Maxwell and his collaborators at Oddity Press. This design and api integration was heavily influenced by the orignal character sheet and book layout of the original Grimwild materials. 
+This character sheet has been designed and created for the Grimwild RPG system based on the work of J.D. Maxwell and his collaborators at Oddity Press. This design and api integration was heavily influenced by the original character sheet and book layout. 
 
 ## Updates
 
