@@ -2,11 +2,11 @@
 
 A custom character sheet for the **Grimwild** tabletop RPG, designed for use with Roll20. (Note that I have no affilitation with Oddity Press.)
 <img src="https://github.com/user-attachments/assets/b447f2df-7922-4e4d-aaae-b92fd7161916" align="center" width="400" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
-<img src="https://github.com/user-attachments/assets/8b494da8-ec12-45f4-bc80-063a631ece57" align="right" width="200" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
+<img src="https://github.com/user-attachments/assets/8b494da8-ec12-45f4-bc80-063a631ece57" align="center" width="300" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
 <div style="center: 430px;"></div>
 
 ## Features
-<img src="https://github.com/user-attachments/assets/50a0dedd-77b2-466a-83df-e7a402f356f2" align="right" width="200" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
+<img src="https://github.com/user-attachments/assets/50a0dedd-77b2-466a-83df-e7a402f356f2" align="right" width="300" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
 <div style="margin-right: 430px;">
   
 - **Attribute Rolling**: Click attribute names (Brawn, Agility, Wits, Presence) to roll dice for action/defense rolls
