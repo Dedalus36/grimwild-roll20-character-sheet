@@ -1,8 +1,6 @@
 # Grimwild Roll20 Character Sheet
 
 A custom character sheet for the **Grimwild** tabletop RPG, designed for use with Roll20. (Note that I have no affilitation with Oddity Press.)
-<img src="https://github.com/user-attachments/assets/b447f2df-7922-4e4d-aaae-b92fd7161916" align="right" width="400" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
-<div style="margin-right: 430px;">
 
 ## Features
 
@@ -13,6 +11,8 @@ A custom character sheet for the **Grimwild** tabletop RPG, designed for use wit
 - **Mark Tracking**: Clickable fields with each attribute for mark tracking, which auto remove when used 
 - **Condition Management**: Bloodied and Rattled condition tracking
 - **Custom Roll Templates**: Styled roll outputs
+<img src="https://github.com/user-attachments/assets/b447f2df-7922-4e4d-aaae-b92fd7161916" align="right" width="400" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
+<div style="margin-right: 430px;">
 
 </div>
 
