@@ -59,7 +59,7 @@ Other aspirational features I might add in the future (or would appreciate other
 - More GM support in terms of managing suspense (could just be a macro tied to a resource item?)  
 - API update to give players more guidance on Critical options
 - Hardcoded specific path abiltiies (e.g., Weapon Matery's extra die effects)
-- Add in all palent/path options to select (that are freely available) 
+- Add in all talent/path options to select (that are freely available) 
 - And of course fine-tuning layout/features as feedback comes in
 
 ## Credits
