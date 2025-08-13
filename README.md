@@ -28,7 +28,7 @@ A custom character sheet for the **Grimwild** tabletop RPG, designed for use wit
 3. Select **"Custom"**
 4. Copy and paste the contents of `grimwild_r20_v1.1.html` into the **HTML Layout** tab
 5. Copy and paste the contents of `grimwild_r20_v1.1.css` into the **CSS Styling** tab
-6. If using the API features, install `grimwild-r20_v1.1api.js` as an API script by heading to the Mod (API Scripts) in game settings, creating a new API with any name you'd like, then paste in the API script, save, and run. 
+6. If using the API features, install `grimwild-r20_v1.1api.js` as an API script by heading to the **Settings > Game Settings** > **Mod (API Scripts)**, creating a new API with any name you'd like, then paste in the API script, save, and run. 
 
 ### API Commands (Pro Subscription Required):
 
