@@ -47,7 +47,7 @@ This sheet is designed for **Grimwild**, a tabletop RPG by Oddity Press. Find th
 
 ## Contributing
 
-Would love to collaborate, feel free to submit issues or pull requests if you find bugs or want to suggest improvements! You can reach me (as Dedalus) on the Oddity Press discord: https://discord.com/invite/bNr5wXFmSk.There is a thread for this project in Crafted Projects.
+Would love to collaborate, feel free to submit issues or pull requests if you find bugs or want to suggest improvements! You can reach me (as Dedalus) on the Oddity Press discord: https://discord.com/invite/bNr5wXFmSk. There is a thread for this project in Crafted Projects.
 
 ## License
 
