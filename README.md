@@ -57,7 +57,7 @@ This project is licensed under the MIT License, see the license file for details
 
 This character sheet has been designed and created for the Grimwild RPG system based on the work of J.D. Maxwell and his collaborators at Oddity Press. This design of the sheet and api integration was heavily influenced by the original character sheet and book layout. 
 
-## Updates
+## Update Ideas 
 
 Other aspirational features I might add in the future (or would appreciate others assisting with):
 - Saving the height of resiazable text entry fields in talent section (Roll20 has been fighting me on this if anyone has a solution)
@@ -66,5 +66,6 @@ Other aspirational features I might add in the future (or would appreciate other
 - More GM support in terms of managing multiple pools over time (but not sure when/if I'll get there)
 - More GM support in terms of managing suspense (could just be a macro tied to a resource item?)  
 - API update to give players more guidance on critical options
-- More specific Path abilities accounted for
+- Hardscoded specific path abiltiies (e.g, Weapon Matery's extra die effects)
+- Add in all palent/path options to select (that are freely available) 
 - And of course fine-tuning layout/features as feedback comes in
