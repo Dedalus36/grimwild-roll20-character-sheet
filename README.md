@@ -43,7 +43,7 @@ A custom character sheet for the **Grimwild** tabletop RPG, designed for use wit
 
 ## Game System
 
-This sheet is designed for **Grimwild**, a tabletop RPG by Oddity Press. Find the free edition here: https://www.drivethrurpg.com/en/product/507201/grimwild-free-edition , or the full edition with extra chapters here: https://www.drivethrurpg.com/en/product/508618/grimwild-cinematic-fantasy-roleplaying . 
+This sheet is designed for **Grimwild**, a tabletop RPG by Oddity Press. Find the free edition here: https://www.drivethrurpg.com/en/product/507201/grimwild-free-edition, or the full edition with extra chapters here: https://www.drivethrurpg.com/en/product/508618/grimwild-cinematic-fantasy-roleplaying. 
 
 ## Contributing
 
