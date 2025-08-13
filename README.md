@@ -26,37 +26,45 @@ A custom character sheet for the **Grimwild** tabletop RPG, designed for use wit
 1. In your Roll20 game, go to **Settings > Game Settings**
 2. Scroll down to **Character Sheet Template**
 3. Select **"Custom"**
-4. Copy and paste the contents of `grimwild_r20_v1.html` into the **HTML Layout** tab
-5. Copy and paste the contents of `grimwild_r20_v1.css` into the **CSS Styling** tab
-6. If using the API features, install `grimwild-r20_v1api.js` as an API script
+4. Copy and paste the contents of `grimwild_r20_v1.1.html` into the **HTML Layout** tab
+5. Copy and paste the contents of `grimwild_r20_v1.1.css` into the **CSS Styling** tab
+6. If using the API features, install `grimwild-r20_v1.1api.js` as an API script by heading to the Mod (API Scripts) in game settings, creating a new API with any name you'd like, then paste in the API script, save, and run. 
 
 ### API Commands (Pro Subscription Required):
 
-- `!grimwild [dice] [thorns] [attribute]` - Roll attribute dice with thorns
+- `!grimwild [dice] [thorns] [attribute]` - Roll attribute dice with thorns, can roll without attribute as well for story/montage/assist rolls. 
 - `!grimpool [size]` - Roll a dice pool and calculate drops
 
-## File Structure
+## Current Files
 
-- `grimwild_r20_v1.html` - Character sheet HTML layout and JavaScript
-- `grimwild_r20_v1.css` - Styling and roll template formatting
-- `grimwild-r20_v1api.js` - API script for enhanced rolling features
+- `grimwild_r20_v1.1.html` - Character sheet HTML layout and JavaScript
+- `grimwild_r20_v1.1.css` - Styling and roll template formatting
+- `grimwild-r20_v1.1api.js` - API script for enhanced rolling features
 
 ## Game System
 
-This sheet is designed for **Grimwild**, a tabletop RPG by Oddity Press. Find the free edition here: https://www.drivethrurpg.com/en/product/507201/grimwild-free-edition .
+This sheet is designed for **Grimwild**, a tabletop RPG by Oddity Press. Find the free edition here: https://www.drivethrurpg.com/en/product/507201/grimwild-free-edition , or the full edition with extra chapters here: https://www.drivethrurpg.com/en/product/508618/grimwild-cinematic-fantasy-roleplaying . 
 
 ## Contributing
 
-Would love to collaborate, feel free to submit issues or pull requests if you find bugs or want to suggest improvements! You can reach me (as Dedalus) on the Oddity Press discord: https://discord.com/invite/bNr5wXFmSk. 
+Would love to collaborate, feel free to submit issues or pull requests if you find bugs or want to suggest improvements! You can reach me (as Dedalus) on the Oddity Press discord: https://discord.com/invite/bNr5wXFmSk.There is a thread for this project in Crafted Projects.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License, see the license file for details.
 
 ## Credits
 
-This character sheet has been designed and created for the Grimwild RPG system based on the work of J.D. Maxwell and his collaborators at Oddity Press. This design and api integration was heavily influenced by the original character sheet and book layout. 
+This character sheet has been designed and created for the Grimwild RPG system based on the work of J.D. Maxwell and his collaborators at Oddity Press. This design of the sheet and api integration was heavily influenced by the original character sheet and book layout. 
 
 ## Updates
 
-Other features I might add in the future (or would appreciate others assisting with) would be a second tab of the sheet for tracking addition elements (arcana, treasure, etc.), as well as proper integration for those without API support. Also want to add more GM support in terms of managing multiple pools over time, but not sure when/if I'll get there. 
+Other aspirational features I might add in the future (or would appreciate others assisting with):
+- Saving the height of resiazable text entry fields in talent section (Roll20 has been fighting me on this if anyone has a solution)
+- Second tab of the sheet for tracking addition elements (arcana, treasure, etc.)
+- Proper integration for those without API support
+- More GM support in terms of managing multiple pools over time (but not sure when/if I'll get there)
+- More GM support in terms of managing suspense (could just be a macro tied to a resource item?)  
+- API update to give players more guidance on critical options
+- More specific Path abilities accounted for
+- And of course fine-tuning layout/features as feedback comes in
