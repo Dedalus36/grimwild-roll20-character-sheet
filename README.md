@@ -1,12 +1,12 @@
 # Grimwild Roll20 Character Sheet
 
 A custom character sheet for the **Grimwild** tabletop RPG, designed for use with Roll20. (Note that I have no affilitation with Oddity Press.) <br>
-<img src="https://imgur.com/BB7U4Ye" align="center" width="400" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
-<img src="https://imgur.com/to4sLbv" align="top-center" width="250" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
+<img src="https://imgur.com/BB7U4Ye.jpg" align="center" width="400" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
+<img src="https://imgur.com/to4sLbv.jpg" align="top-center" width="250" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
 <div style="center: 430px;"></div>
 
 ## Features
-<img src="https://imgur.com/pi6xORZ" align="right" width="300" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
+<img src="https://imgur.com/pi6xORZ.jpg" align="right" width="300" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
 <div style="margin-right: 430px;">
   
 - **Attribute Rolling**: Click attribute names (Brawn, Agility, Wits, Presence) to roll dice for action/defense rolls
