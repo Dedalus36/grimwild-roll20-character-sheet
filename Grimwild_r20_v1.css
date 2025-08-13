@@ -1063,20 +1063,6 @@
 			flex-direction: column;
 		}
 
-		.talent-slot {
-			width: 100%;
-			min-height: 45px;
-			height: 45px;
-			border: none;
-			border-bottom: 1px solid #ddd;
-			padding: 6px 4px;
-			font-size: 12px;
-			font-family: Arial, sans-serif;
-			resize: vertical;
-			box-sizing: border-box;
-			background-color: white;
-		}
-
 		.repeating_talents {
 			border: none;
 			margin: 0;
@@ -1096,17 +1082,48 @@
 			border: none;
 			border-bottom: 1px solid #ddd;
 			padding: 6px 4px;
-			font-size: 10px;
+			font-size: 12px;
 			font-family: Arial, sans-serif;
 			resize: vertical;
 			box-sizing: border-box;
 			background-color: white;
 		}
-
+		
+		.talent-slot::first-line,
+		.core-talent-area::first-line {
+			font-weight: bold;
+			font-size: 14px;
+			font-family: 'Capito04', 'Trebuchet MS', Arial, sans-serif;
+		}
+		
 		.repeating_talents:last-child .talent-slot {
 			border-bottom: none;
 		}
+		/* Make talent fields invisible when filled - looks like printed text */
+		.core-talent-area:not(:placeholder-shown):not(:focus),
+		.talent-slot:not(:placeholder-shown):not(:focus) {
+			border: none !important;
+			background: transparent !important;
+			outline: none !important;
+			resize: none !important;
+		}
 
+		/* Restore normal appearance when clicked/focused for editing */
+		.core-talent-area:focus,
+		.talent-slot:focus {
+			border: 1px solid #ccc !important;
+			background: white !important;
+			outline: none !important;
+			resize: vertical !important;
+		}
+		
+		.core-talent-area::placeholder,
+		.talent-slot::placeholder {
+			line-height: 1.4;
+			white-space: pre-line;
+			color: lightgray;
+		}
+		
 		.resources-section {
 			background-color: #f0f0f0;
 			border-radius: 6px;
