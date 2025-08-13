@@ -36,7 +36,7 @@ A custom character sheet for the **Grimwild** tabletop RPG, designed for use wit
 - `!grimpool [size]` - Roll a dice pool and calculate drops
 
 ## Current Files
-
+Head to the latest release for the most recent files. 
 - `grimwild_r20_v1.1.html` - Character sheet HTML layout and JavaScript
 - `grimwild_r20_v1.1.css` - Styling and roll template formatting
 - `grimwild-r20_v1.1api.js` - API script for enhanced rolling features
