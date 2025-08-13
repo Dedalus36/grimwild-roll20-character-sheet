@@ -49,14 +49,6 @@ This sheet is designed for **Grimwild**, a tabletop RPG by Oddity Press. Find th
 
 Would love to collaborate, feel free to submit issues or pull requests if you find bugs or want to suggest improvements! You can reach me (as Dedalus) on the Oddity Press discord: https://discord.com/invite/bNr5wXFmSk. There is a thread for this project in Crafted Projects.
 
-## License
-
-This project is licensed under the MIT License, see the license file for details.
-
-## Credits
-
-This character sheet has been designed and created for the Grimwild RPG system based on the work of J.D. Maxwell and his collaborators at Oddity Press. This design of the sheet and api integration was heavily influenced by the original character sheet and book layout. 
-
 ## Update Ideas 
 
 Other aspirational features I might add in the future (or would appreciate others assisting with):
@@ -69,3 +61,11 @@ Other aspirational features I might add in the future (or would appreciate other
 - Hardcoded specific path abiltiies (e.g., Weapon Matery's extra die effects)
 - Add in all palent/path options to select (that are freely available) 
 - And of course fine-tuning layout/features as feedback comes in
+
+## Credits
+
+This character sheet has been designed and created for the Grimwild RPG system based on the work of J.D. Maxwell and his collaborators at Oddity Press. This design of the sheet and api integration was heavily influenced by the original character sheet and book layout. 
+
+## License
+
+This project is licensed under the MIT License, see the license file for details.
