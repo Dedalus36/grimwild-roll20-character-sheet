@@ -65,7 +65,7 @@ Other aspirational features I might add in the future (or would appreciate other
 - Proper integration for those without API support
 - More GM support in terms of managing multiple pools over time (but not sure when/if I'll get there)
 - More GM support in terms of managing suspense (could just be a macro tied to a resource item?)  
-- API update to give players more guidance on critical options
+- API update to give players more guidance on Critical options
 - Hardscoded specific path abiltiies (e.g, Weapon Matery's extra die effects)
 - Add in all palent/path options to select (that are freely available) 
 - And of course fine-tuning layout/features as feedback comes in
