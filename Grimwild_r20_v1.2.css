@@ -523,8 +523,8 @@
 			justify-content: space-between;
 			align-items: center;
 			margin-top: 0px;
-			padding: 0 40px;
-			margin-left: 30px;
+			padding: 0 32px;
+			margin-left: 35px;
 			margin-bottom: 15px;
 		}
 
@@ -532,7 +532,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			gap: 6px;
+			gap: 5px;
 		}        
 
 		.pool-label {
@@ -591,11 +591,10 @@
 			max-height: 80px !important;
 			max-width: 450px !important;
 			background: white;
-			color: black;
 			border: 1px solid #ccc;
-			padding: 0px;
+			padding: 5px 6px 5px 6px;
 			font-family: inherit;
-			font-size: 12px;
+			font-size: 14px;
 			font-weight: normal;
 			resize: none !important;
 			margin-bottom: 8px;
@@ -610,7 +609,7 @@
 			letter-spacing: 0.3px;
 			color: black;
 			text-align: center;
-			transform: translatey(-20%);
+			transform: translatey(-40%);
 		}
 
 		.counters-section {
@@ -1031,6 +1030,7 @@
 			margin-bottom: -10px;
 		}
 
+/* ===== SUBSECTION LAYOUT ===== */
 		.subsection-header {
 			background-color: #d0d0d0;
 			color: black;
@@ -1039,6 +1039,10 @@
 			font-size: 12px;
 			text-transform: uppercase;
 			letter-spacing: 0.5px;
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
 		}
 
 		.subsection-content {
@@ -1046,37 +1050,69 @@
 			background-color: #f0f0f0;
 		}
 
+		.talent-container {
+			position: relative;
+		}
+
+		/* ===== CORE TALENT AREA STYLING ===== */
+
+		/* Core talent base styling */
 		.core-talent-area {
-			width: 100% !important;
-			min-height: 60px !important;
-			border: 1px solid #ccc !important;
-			padding: 6px !important;
-			font-size: 12px !important;
-			font-family: Arial, sans-serif !important;
 			resize: vertical !important;
-			box-sizing: border-box !important;
-			background-color: white !important;
 		}
 
-		.talent-slots {
-			display: flex;
-			flex-direction: column;
+		/* Empty state: white background */
+		.core-talent-area:placeholder-shown {
+			background: white !important;
+			border: 1px solid #ccc !important;
+			font-size: 12px;
 		}
 
-		.repeating_talents {
-			border: none;
-			margin: 0;
-			padding: 0;
+		/* Filled but unfocused: invisible appearance */
+		.core-talent-area:not(:placeholder-shown):not(:focus) {
+			border: none !important;
+			background: transparent !important;
+			outline: none !important;
+			resize: none !important;
+			font-size: 12px !important;
+			line-height: 1.4 !important;
 		}
 
-		.talent-slot-container {
-			display: flex;
-			flex-direction: column;
-			margin-bottom: 0;
+		/* Focused: visible for editing */
+		.core-talent-area:focus,
+		.talent-container:focus-within .core-talent-area:not(:placeholder-shown),
+		.subsection:focus-within .core-talent-area:not(:placeholder-shown) {
+			border: 1px solid #ccc !important;
+			background: white !important;
+			outline: none !important;
+			resize: none !important;
+			font-size: 12px !important;
+			font-family: 'Capito04', 'Trebuchet MS', Arial, sans-serif !important;
+			line-height: 1.4 !important;
 		}
 
+		/* Core talent resize states - UNLOCKED */
+		.subsection:has(input[name="attr_core_talent_resize_unlocked"][value="true"]) .core-talent-area:focus {
+			resize: vertical !important;
+		}
+
+		/* Core talent resize states - LOCKED */
+		.subsection:has(input[name="attr_core_talent_resize_unlocked"][value="false"]) .core-talent-area:focus,
+		.subsection:has(input[name="attr_core_talent_resize_unlocked"][value="false"]) .core-talent-area:not(:focus) {
+			resize: none !important;
+			height: auto !important;
+			field-sizing: content !important;
+			overflow: hidden !important;
+		}
+
+		/* ===== ACQUIRED TALENTS STYLING ===== */
+
+		/* Talent slot base styling */
 		.talent-slot {
-			width: 100%;
+			width: calc(100% + 10px) !important;
+			max-width: none !important;
+			margin-left: 0 !important;
+			margin-right: 0 !important;
 			min-height: 45px;
 			height: 45px;
 			border: none;
@@ -1088,42 +1124,256 @@
 			box-sizing: border-box;
 			background-color: white;
 		}
-		
+
+		/* Empty state: white background */
+		.talent-slot:placeholder-shown {
+			background: white !important;
+			border: 1px solid #ccc !important;
+		}
+
+		/* Filled but unfocused: invisible appearance */
+		.talent-slot:not(:placeholder-shown):not(:focus) {
+			border: none !important;
+			background: transparent !important;
+			outline: none !important;
+			resize: none !important;
+			overflow: hidden !important;
+			font-size: 12px !important;
+			font-family: 'Capito04', 'Trebuchet MS', Arial, sans-serif !important;
+			line-height: 1.4 !important;
+		}
+
+		/* Focused: visible for editing */
+		.talent-slot:focus,
+		.subsection:focus-within .talent-slot:not(:placeholder-shown) {
+			border: 1px solid #ccc !important;
+			background: white !important;
+			outline: none !important;
+			resize: vertical !important;
+			font-size: 12px !important;
+			font-family: 'Capito04', 'Trebuchet MS', Arial, sans-serif !important;
+			line-height: 1.4 !important;
+		}
+
+		/* Acquired talents resize states - UNLOCKED */
+		.subsection:has(input[name="attr_acquired_talents_resize_unlocked"][value="true"]) .talent-slot:focus {
+			resize: vertical !important;
+		}
+
+		/* Acquired talents resize states - LOCKED */
+		.subsection:has(input[name="attr_acquired_talents_resize_unlocked"][value="false"]) .talent-slot:focus,
+		.subsection:has(input[name="attr_acquired_talents_resize_unlocked"][value="false"]) .talent-slot:not(:focus) {
+			resize: none !important;
+			height: auto !important;
+			field-sizing: content !important;
+			overflow: hidden !important;
+		}
+
+		/* Acquired talents LOCKED state - force auto-sizing for unfocused */
+		.subsection:has(input[name="attr_acquired_talents_resize_unlocked"][value="false"]) .talent-slot:not(:placeholder-shown):not(:focus) {
+			height: auto !important;
+			field-sizing: content !important;
+		}
+
+		/* ===== SHARED STYLING ===== */
+
+		/* First line formatting for both talent types */
 		.talent-slot::first-line,
 		.core-talent-area::first-line {
 			font-weight: bold;
 			font-size: 14px;
 			font-family: 'Capito04', 'Trebuchet MS', Arial, sans-serif;
 		}
-		
-		.repeating_talents:last-child .talent-slot {
-			border-bottom: none;
-		}
-		/* Make talent fields invisible when filled - looks like printed text */
-		.core-talent-area:not(:placeholder-shown):not(:focus),
-		.talent-slot:not(:placeholder-shown):not(:focus) {
-			border: none !important;
-			background: transparent !important;
-			outline: none !important;
-			resize: none !important;
-		}
 
-		/* Restore normal appearance when clicked/focused for editing */
-		.core-talent-area:focus,
-		.talent-slot:focus {
-			border: 1px solid #ccc !important;
-			background: white !important;
-			outline: none !important;
-			resize: vertical !important;
-		}
-		
+		/* Placeholder styling for both talent types */
 		.core-talent-area::placeholder,
 		.talent-slot::placeholder {
 			line-height: 1.4;
 			white-space: pre-line;
 			color: lightgray;
+			font-family: 'Capito04', 'Trebuchet MS', Arial, sans-serif !important;
+
 		}
-		
+
+		/* ===== RESIZE TOGGLE BUTTON SYSTEM ===== */
+
+		/* Header button container */
+		.subsection-header .talent-container {
+			position: static;
+			display: block;
+		}
+
+		/* Header button positioning and visibility */
+		.subsection-header .resize-toggle-btn {
+			position: relative;
+			top: auto;
+			right: auto;
+			margin: -5px 0 0 2px;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 0.2s ease;
+		}
+
+		/* Show button when core talent is focused */
+		.core-talent-area:focus + * .subsection-header .resize-toggle-btn,
+		.subsection:has(.core-talent-area:focus) .subsection-header .resize-toggle-btn {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		/* Show button when acquired talent is focused */
+		.talent-slot:focus + * .subsection-header .resize-toggle-btn,
+		.subsection:has(.talent-slot:focus) .subsection-header .resize-toggle-btn {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		/* Base button styling (locked state) */
+		.resize-toggle-btn {
+			position: absolute;
+			top: 6px;
+			right: 6px;
+			width: 10px;
+			height: 10px;
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			z-index: 10;
+			padding: 0;
+			color: gray;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 0.2s ease;
+			
+			/* Lock icon styling */
+			box-sizing: border-box;
+			display: block;
+			width: 6px;
+			height: 5.5px;
+			border: 1px solid;
+			border-top-right-radius: 50%;
+			border-top-left-radius: 50%;
+			border-bottom: transparent;
+			margin-top: -10px;
+			margin-left: 2px;
+			position: relative !important;
+			top: -5px;
+		}
+
+		/* Lock body (::after element) */
+		.resize-toggle-btn::after {
+			content: "";
+			display: block;
+			box-sizing: border-box;
+			position: absolute;
+			width: 8px;
+			height: 5px;
+			border-radius: 1px;
+			border: 1px solid transparent;
+			box-shadow: 0 0 0 1px;
+			left: -2px;
+			top: 4.5px;
+		}
+
+		/* Show button when core talent textarea is focused */
+		.core-talent-area:focus ~ .resize-toggle-btn,
+		.talent-container:focus-within .resize-toggle-btn {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		/* Core talent unlocked state styling */
+		input[name="attr_core_talent_resize_unlocked"][value="true"] ~ .resize-toggle-btn {
+			width: 6px !important;
+			height: 3px !important;
+			border-top-right-radius: 50px !important;
+			border-top-left-radius: 50px !important;
+			margin-top: 0px !important;
+			margin-left: 2px !important;
+			top: -4px !important;
+			position: relative !important;
+		}
+
+		input[name="attr_core_talent_resize_unlocked"][value="true"] ~ .resize-toggle-btn::after {
+			border: 1px solid transparent !important;
+			box-shadow: 0 0 0 1px !important;
+			width: 8px !important;
+			height: 5px !important;
+			border-radius: 1px !important;
+			left: -2px !important;
+			top: 5px !important;
+		}
+
+		input[name="attr_core_talent_resize_unlocked"][value="true"] ~ .resize-toggle-btn::before {
+			content: "" !important;
+			display: block !important;
+			box-sizing: border-box !important;
+			position: absolute !important;
+			width: 1px !important;
+			height: 3px !important;
+			background: currentColor !important;
+			left: -1px !important;
+			top: 2px !important;
+		}
+
+		/* Acquired talents unlocked state styling */
+		input[name="attr_acquired_talents_resize_unlocked"][value="true"] ~ .resize-toggle-btn {
+			width: 6px !important;
+			height: 3px !important;
+			border-top-right-radius: 50px !important;
+			border-top-left-radius: 50px !important;
+			margin-top: 0px !important;
+			margin-left: 2px !important;
+			top: -4px !important;
+			position: relative !important;
+		}
+
+		input[name="attr_acquired_talents_resize_unlocked"][value="true"] ~ .resize-toggle-btn::after {
+			border: 1px solid transparent !important;
+			box-shadow: 0 0 0 1px !important;
+			width: 8px !important;
+			height: 5px !important;
+			border-radius: 1px !important;
+			left: -2px !important;
+			top: 5px !important;
+		}
+
+		input[name="attr_acquired_talents_resize_unlocked"][value="true"] ~ .resize-toggle-btn::before {
+			content: "" !important;
+			display: block !important;
+			box-sizing: border-box !important;
+			position: absolute !important;
+			width: 1px !important;
+			height: 3px !important;
+			background: currentColor !important;
+			left: -1px !important;
+			top: 2px !important;
+		}
+
+		/* ===== REPEATING SECTION LAYOUT ===== */
+		.talent-slots {
+			display: flex;
+			flex-direction: column;
+		}
+
+		/* Ensure repeating section containers don't add extra padding/margin */
+		.repeating_talents {
+			border: none;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			display: block; /* Ensure it's not flex or anything else */
+		}
+		.talent-slot-container {
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+		.repeating_talents:last-child .talent-slot {
+			border-bottom: none;
+		}
 		.resources-section {
 			background-color: #f0f0f0;
 			border-radius: 6px;
@@ -1149,7 +1399,7 @@
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			gap: 8px;
-			margin-bottom: 8px;
+			margin-bottom: 5px;
 		}
 
 		.resource-box {
@@ -1182,7 +1432,7 @@
 			align-items: center;
 			justify-content: center;
 			margin-top: auto;
-			margin-bottom: 0px;
+			margin-bottom: -4px; /*Adjust notes height*/
 		}
 
 		.resource-count-input {
@@ -1191,7 +1441,7 @@
 			border: 1px solid #999;
 			background: white;
 			text-align: center;
-			font-size: 14px;
+			font-size: 18px;
 			font-weight: bold;
 			border-radius: 4px;
 			outline: none;
@@ -1202,12 +1452,20 @@
 			border: none;
 			background: transparent;
 			font-size: 12px;
-			padding: 0px 0;
+			padding: 0px 0px;
 			outline: none;
 			box-sizing: border-box;
 			text-align: center;
 			color: #666;
 		}
+		
+		.resource-name-input::placeholder,
+		.resource-notes-input::placeholder {
+			line-height: 1.4;
+			color: lightgray;
+			font-family: 'Capito04', 'Trebuchet MS', Arial, sans-serif;
+		}
+		
 		.story-experience-row {
 			display: flex;
 			gap: 15px;
