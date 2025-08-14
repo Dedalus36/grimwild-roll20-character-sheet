@@ -512,22 +512,35 @@
                     </div>
                     
                     <div class="section-content">
-                        <div class="subsection">
-                            <div class="subsection-header">CORE TALENT</div>
-                            <div class="subsection-content">
-								<textarea class="core-talent-area" name="attr_core_talent" placeholder="TALENT NAME&#10;Talent description.&#10;&#10;SECTION INSTRUCTIONS: The first line automatically formats as a heading. Save by clicking out of the box. Reopen the editor by clicking the text."></textarea>                            </div>
-                        </div>
+						<div class="subsection">
+							<div class="subsection-header">
+								CORE TALENT
+								<div class="talent-container">
+									<input type="hidden" name="attr_core_talent_resize_unlocked" value="false">
+									<button type="action" name="act_toggle_core_talent_resize" class="resize-toggle-btn" title="Toggle resize mode"></button>
+								</div>
+							</div>
+							<div class="subsection-content">
+								<textarea class="core-talent-area" name="attr_core_talent" placeholder="TALENT NAME&#10;Talent description.&#10;&#10;INSTRUCTIONS: First line automatically formats as a heading. Save by clicking out of the box. Reopen editor by clicking the text. Lock toggles free resizing."></textarea>
+							</div>
+						</div>
                         
-                        <div class="subsection">
-                            <div class="subsection-header">ACQUIRED TALENTS</div>
-                            <div class="subsection-content">
-                                <fieldset class="repeating_talents">
-                                    <div class="talent-slot-container">
-                                        <textarea class="talent-slot" name="attr_talent_text" placeholder=""></textarea>
-                                    </div>
-                                </fieldset>
-                            </div>
-                        </div>
+						<div class="subsection">
+							<div class="subsection-header">
+								ACQUIRED TALENTS
+								<div class="talent-container">
+									<input type="hidden" name="attr_acquired_talents_resize_unlocked" value="false">
+									<button type="action" name="act_toggle_acquired_talents_resize" class="resize-toggle-btn" title="Toggle resize mode"></button>
+								</div>
+							</div>
+							<div class="subsection-content">
+								<fieldset class="repeating_talents">
+									<div class="talent-slot-container">
+										<textarea class="talent-slot" name="attr_talent_text" placeholder="TALENT NAME&#10;Talent description.&#10;&#10;INSTRUCTIONS: First line automatically formats as a heading. Save by clicking out of the box. Reopen editor by clicking the text. Lock toggles free resizing."></textarea>
+									</div>
+								</fieldset>
+							</div>
+						</div>
                     </div>
                 </div>
 
@@ -543,28 +556,28 @@
                                     <div class="resource-count-container">
                                         <input type="number" class="resource-count-input" name="attr_item_1_count" value="0" min="0">
                                     </div>
-                                    <input type="text" class="resource-notes-input" name="attr_item_1_notes" placeholder="notes">
+                                    <input type="text" class="resource-notes-input" name="attr_item_1_notes" placeholder="Notes">
                                 </div>
                                 <div class="resource-box">
                                     <input type="text" class="resource-name-input" name="attr_item_2_name" placeholder="Name">
                                     <div class="resource-count-container">
                                         <input type="number" class="resource-count-input" name="attr_item_2_count" value="0" min="0">
                                     </div>
-                                    <input type="text" class="resource-notes-input" name="attr_item_2_notes" placeholder="notes">
+                                    <input type="text" class="resource-notes-input" name="attr_item_2_notes" placeholder="Notes">
                                 </div>
                                 <div class="resource-box">
                                     <input type="text" class="resource-name-input" name="attr_item_3_name" placeholder="Name">
                                     <div class="resource-count-container">
                                         <input type="number" class="resource-count-input" name="attr_item_3_count" value="0" min="0">
                                     </div>
-                                    <input type="text" class="resource-notes-input" name="attr_item_3_notes" placeholder="notes">
+                                    <input type="text" class="resource-notes-input" name="attr_item_3_notes" placeholder="Notes">
                                 </div>
                                 <div class="resource-box">
                                     <input type="text" class="resource-name-input" name="attr_item_4_name" placeholder="Name">
                                     <div class="resource-count-container">
                                         <input type="number" class="resource-count-input" name="attr_item_4_count" value="0" min="0">
                                     </div>
-                                    <input type="text" class="resource-notes-input" name="attr_item_4_notes" placeholder="notes">
+                                    <input type="text" class="resource-notes-input" name="attr_item_4_notes" placeholder="Notes">
                                 </div>
                             </div>
                         </fieldset>
@@ -1386,6 +1399,41 @@
 			extra_dice: 0
 		});
 	});
+		// Toggle between locked (auto-size) and unlocked (manual resize) modes
+	on('clicked:toggle_core_talent_resize', function() {
+		getAttrs(['core_talent_resize_unlocked'], function(values) {
+			const isCurrentlyUnlocked = values.core_talent_resize_unlocked === 'true';
+			const newState = isCurrentlyUnlocked ? 'false' : 'true';
+			
+			setAttrs({
+				core_talent_resize_unlocked: newState
+			});
+			
+			console.log('Resize mode toggled to:', newState === 'true' ? 'UNLOCKED (manual resize)' : 'LOCKED (auto-size)');
+		});
+	});
+
+		// Toggle all talent slots resize from header button
+on('clicked:toggle_acquired_talents_resize', function() {
+    getAttrs(['acquired_talents_resize_unlocked'], function(values) {
+        const isCurrentlyUnlocked = values.acquired_talents_resize_unlocked === 'true';
+        const newState = isCurrentlyUnlocked ? 'false' : 'true';
+        
+        setAttrs({
+            acquired_talents_resize_unlocked: newState
+        });
+        
+        console.log('Acquired Talents resize mode toggled to:', newState === 'true' ? 'UNLOCKED' : 'LOCKED');
+    });
+});
+// REPLACE both sheet:opened functions with this single one
+on('sheet:opened', function() {
+    setAttrs({
+        core_talent_resize_unlocked: 'false',
+        acquired_talents_resize_unlocked: 'false'  // ← CORRECT ATTRIBUTE NAME
+    });
+    console.log('Sheet opened - both talent sections set to LOCKED mode (auto-size)');
+});
 </script>
 <rolltemplate class="sheet-rolltemplate-grimwild">
     <div class="sheet-container">
