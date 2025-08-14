@@ -52,7 +52,7 @@ Would love to collaborate, feel free to submit issues or pull requests if you fi
 ## Update Ideas 
 
 Other aspirational features I might add in the future (or would appreciate others assisting with):
-- Saving the height of resiazable text entry fields in talent section (Roll20 has been fighting me on this if anyone has a solution)
+- ~~Saving the height of resiazable text entry fields in talent section (Roll20 has been fighting me on this if anyone has a solution)~~
 - Second tab of the sheet for tracking addition elements (arcana, treasure, etc.)
 - Proper integration for those without API support
 - More GM support in terms of managing multiple pools over time (but not sure when/if I'll get there)
