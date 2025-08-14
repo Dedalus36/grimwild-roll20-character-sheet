@@ -26,9 +26,9 @@ A custom character sheet for the **Grimwild** tabletop RPG, designed for use wit
 1. In your Roll20 game, go to **Settings > Game Settings**
 2. Scroll down to **Character Sheet Template**
 3. Select **"Custom"**
-4. Copy and paste the contents of `grimwild_r20_v1.1.html` into the **HTML Layout** tab and save.
-5. Copy and paste the contents of `grimwild_r20_v1.1.css` into the **CSS Styling** tab and save.
-6. If using the API features, install `grimwild-r20_v1.1api.js` as an API script by heading to the **Settings > Game Settings** > **Mod (API Scripts)**, creating a new API with any name you'd like, then paste in the API script, Save, and Enable. 
+4. Copy and paste the contents of `grimwild_r20_v1.2.html` into the **HTML Layout** tab and save.
+5. Copy and paste the contents of `grimwild_r20_v1.2.css` into the **CSS Styling** tab and save.
+6. If using the API features, install `grimwild-r20_v1.2api.js` as an API script by heading to the **Settings > Game Settings** > **Mod (API Scripts)**, creating a new API with any name you'd like, then paste in the API script, Save, and Enable. 
 
 ### API Commands (Pro Subscription Required):
 
@@ -37,9 +37,9 @@ A custom character sheet for the **Grimwild** tabletop RPG, designed for use wit
 
 ## Current Files
 Head to the latest release for the most recent files. 
-- `grimwild_r20_v1.1.html` - Character sheet HTML layout and JavaScript
-- `grimwild_r20_v1.1.css` - Styling and roll template formatting
-- `grimwild-r20_v1.1api.js` - API script for enhanced rolling features
+- `grimwild_r20_v1.2.html` - Character sheet HTML layout and JavaScript
+- `grimwild_r20_v1.2.css` - Styling and roll template formatting
+- `grimwild-r20_v1.2api.js` - API script for enhanced rolling features
 
 ## Game System
 
