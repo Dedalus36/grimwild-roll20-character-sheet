@@ -1,6 +1,6 @@
 on('ready', function() {
     log('=== Grimwild Dice System Loaded ===');
-    sendChat('System', 'Grimwild dice system is ready! v1');
+    sendChat('System', 'Grimwild dice system is ready! v1.2');
 });
 
 on('chat:message', function(msg) {
@@ -286,3 +286,4 @@ function handlePoolRoll(msg) {
 
 sendChat('Grimwild', rollString);
 }
+
