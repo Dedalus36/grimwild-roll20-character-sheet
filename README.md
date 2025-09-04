@@ -1,6 +1,6 @@
 # Grimwild Roll20 Character Sheet
 
-A custom character sheet for the **Grimwild** tabletop RPG, designed for use with Roll20. (Note that I have no affilitation with Oddity Press.) <br>
+A custom character sheet for the **Grimwild** tabletop RPG, designed for use with Roll20. <br>
 <img src="https://imgur.com/BB7U4Ye.jpg" align="center" width="400" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
 <img src="https://imgur.com/to4sLbv.jpg" align="top-center" width="250" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
 <div style="center: 430px;"></div>
@@ -68,4 +68,4 @@ This character sheet has been designed and created for the Grimwild RPG system b
 
 ## License
 
-This project is licensed under the MIT License, see the license file for details.
+This project is licensed under the MIT License, see the license file for details. Please note that I have no affilitation with Oddity Press.
