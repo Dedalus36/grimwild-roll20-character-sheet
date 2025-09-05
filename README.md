@@ -64,7 +64,7 @@ Other aspirational features I might add in the future (or would appreciate other
 
 ## Credits
 
-This character sheet has been designed and created for the Grimwild RPG system based on the work of J.D. Maxwell and his collaborators at Oddity Press. This design of the sheet and api integration was heavily influenced by the original character sheet and book layout. 
+This character sheet has been designed and created for the Grimwild RPG system based on the work of J.D. Maxwell and his collaborators at Oddity Press. The design of the sheet and api integration was heavily influenced by the original character sheet and book layout. 
 
 ## License
 
