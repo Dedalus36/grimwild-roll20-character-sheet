@@ -68,4 +68,4 @@ This character sheet has been designed and created for the Grimwild RPG system b
 
 ## License
 
-This project is licensed under the MIT License, see the license file for details. Please note that I have no affilitation with Oddity Press.
+This project is licensed under the MIT License, see the license file for details. I have no affilitation with Oddity Press.
