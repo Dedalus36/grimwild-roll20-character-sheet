@@ -1,7 +1,7 @@
 # Grimwild Roll20 Character Sheet
 
 A custom character sheet for the **Grimwild** tabletop RPG, designed for use with Roll20. <br>
-<img src="https://imgur.com/a/MtkUQw7.jpg" align="center" width="400" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
+<img src="https://i.imgur.com/PkLZkH1.jpeg" align="center" width="400" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
 <img src="https://imgur.com/to4sLbv.jpg" align="top-center" width="250" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
 <div style="center: 430px;"></div>
 
