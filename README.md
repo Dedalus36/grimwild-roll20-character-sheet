@@ -20,16 +20,16 @@ A custom character sheet for the **Grimwild** tabletop RPG, designed for use wit
 
 </div>
 
-## Installation
+## Using the Sheet
 
 ### For Roll20 Game Creators:
+1. When creating a game, simply select the Grimwild sheet from Roll20's dropdown.
+2. If you are a Free or Plus user, make sure to turn off API functionality (this default will be changed in the next update).
+3. If you are a Pro user, follow the instructions below to install the accompanying API. 
 
-1. In your Roll20 game, go to **Settings > Game Settings**
-2. Scroll down to **Character Sheet Template**
-3. Select **"Custom"**
-4. Copy and paste the contents of `grimwild_r20_v1.3.html` into the **HTML Layout** tab and save.
-5. Copy and paste the contents of `grimwild_r20_v1.3.css` into the **CSS Styling** tab and save.
-6. If using the Grimwild Roll20 API, install `grimwild-r20_v1.3api.js` as an API script by heading to the **Settings > Game Settings** > **Mod (API Scripts)**, creating a new API with any name you'd like, then paste in the API script, Save, and Enable.
+### API Installation (For Pro Users Only):
+1. If using the Grimwild Roll20 API, install `grimwild-r20_v1.3api.js` as an API script by heading to the **Settings > Game Settings** > **Mod (API Scripts)**,
+2. Create a new API with any name you'd like, then paste in the API script, Save, and Enable.
 
 ### Optional Rollable Table Integration (when not using API):
 
