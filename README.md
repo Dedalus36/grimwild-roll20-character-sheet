@@ -37,7 +37,7 @@ Note that if you are unable to use the API (not a pro subscriber) you will have 
 - Simple dice # outputs.
 - Enable the Rollable Table option to output the dice results (Grim, Messy, Perfect, etc.) instead.
 
-To use Rollable Tables, create the following two tables in Roll20 (it takes <1 minute to do so). 
+To use Rollable Tables, create the following two tables in Roll20: 
 - Name: GWRoll | Table Items: Grim (Weight 3); Messy (Weight 2); Perfect (Weight 1)
 - Name: Thorn | Table Items: __ (Weight 6); Cut (Weight 2) 
 
