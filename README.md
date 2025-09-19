@@ -39,7 +39,8 @@ Note that if you are unable to use the API (not a pro subscriber) you will have 
 
 To use Rollable Tables, create the following two tables in Roll20: 
 - Name: GWRoll | Table Items: Grim (Weight 3); Messy (Weight 2); Perfect (Weight 1)
-- Name: Thorn | Table Items: __ (Weight 6); Cut (Weight 2) 
+- Name: Thorn | Table Items: __ (Weight 6); Cut (Weight 2)
+Then make sure the Enable Rollable Tables option is selected on the Settings tab (and API is disabled). 
 
 ### API Commands (Pro Subscription Required):
 
