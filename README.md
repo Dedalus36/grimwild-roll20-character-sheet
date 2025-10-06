@@ -16,6 +16,7 @@ A custom character sheet for the **Grimwild** tabletop RPG, designed for use wit
 - **Mark Tracking**: Clickable fields with each attribute for mark tracking, which auto remove when used 
 - **Condition Management**: Bloodied and Rattled condition tracking
 - **Custom Roll Templates**: Styled roll outputs
+- **All 12 Core Talents Available**: Core talents and any unique functionality will auto-enable when a recognized path is entered. 
 - **Grimwild Companion API**: Accompanying optional API allows for autocalculations and enhanced results 
 
 </div>
