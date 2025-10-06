@@ -25,11 +25,11 @@ A custom character sheet for the **Grimwild** tabletop RPG, designed for use wit
 
 ### For Roll20 Game Creators:
 1. When creating a game, simply select the Grimwild sheet from Roll20's dropdown.
-2. If you are a Free or Plus user, make sure to turn off API functionality (this default will be changed in the next update).
+2. If you are a Free or Plus user, make sure API funcionality is disabled.
 3. If you are a Pro user, follow the instructions below to install the accompanying API. 
 
 ### API Installation (For Pro Subscribers Only):
-The Grimwild Companion API is available in the Roll20 mod library, just enable to use it in your game. If you are unable to find it there, follow the instructions below. 
+The Grimwild Companion API is available in the Roll20 mod library, just enable it to use it in your game. If you are unable to find it there, follow the instructions below. 
 1. If using the Grimwild Roll20 API, install `GrimwildCompanion_v1.4.js` as an API script by heading to the **Settings > Game Settings** > **Mod (API Scripts)**,
 2. Create a new API with any name you'd like, then paste in the API script, Save, and Enable.
 
