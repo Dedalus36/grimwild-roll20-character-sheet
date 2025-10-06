@@ -1,8 +1,8 @@
 # Grimwild Roll20 Character Sheet
 
 A custom character sheet for the **Grimwild** tabletop RPG, designed for use with Roll20. <br>
-<img src="https://i.imgur.com/PkLZkH1.jpeg" align="center" width="400" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
-<img src="https://imgur.com/to4sLbv.jpg" align="top-center" width="250" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
+<img src="https://i.imgur.com/CNS8UrZ.jpeg" align="center" width="400" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
+<img src="https://imgur.com/to4sLbv.jpg" align="top-center" width="400" style="margin-left: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px;">
 <div style="center: 430px;"></div>
 
 ## Features
@@ -11,12 +11,12 @@ A custom character sheet for the **Grimwild** tabletop RPG, designed for use wit
   
 - **Attribute Rolling**: Click attribute names (Brawn, Agility, Wits, Presence) to roll dice for action/defense rolls
 - **Thorn System**: Auto handling of difficulty and mark/harm thorns
-- **Pool Rolling**: Build and roll custom dice pools while the sheet automatically determines drops
+- **Pool Rolling**: Build and roll custom dice pools and power pools while the sheet automatically determines drops
 - **Other Rolls**: Dice can be added manually for Story, Montage, or Assist rolls  
 - **Mark Tracking**: Clickable fields with each attribute for mark tracking, which auto remove when used 
 - **Condition Management**: Bloodied and Rattled condition tracking
 - **Custom Roll Templates**: Styled roll outputs
-- **Grimwild Roll20 API**: Accompanying optional API allows for autocalculations and enhanced results 
+- **Grimwild Companion API**: Accompanying optional API allows for autocalculations and enhanced results 
 
 </div>
 
@@ -27,8 +27,9 @@ A custom character sheet for the **Grimwild** tabletop RPG, designed for use wit
 2. If you are a Free or Plus user, make sure to turn off API functionality (this default will be changed in the next update).
 3. If you are a Pro user, follow the instructions below to install the accompanying API. 
 
-### API Installation (For Pro Users Only):
-1. If using the Grimwild Roll20 API, install `grimwild-r20_v1.3api.js` as an API script by heading to the **Settings > Game Settings** > **Mod (API Scripts)**,
+### API Installation (For Pro Subscribers Only):
+The Grimwild Companion API is available in the Roll20 mod library, just enable to use it in your game. If you are unable to find it there, follow the instructions below. 
+1. If using the Grimwild Roll20 API, install `GrimwildCompanion_v1.4.js` as an API script by heading to the **Settings > Game Settings** > **Mod (API Scripts)**,
 2. Create a new API with any name you'd like, then paste in the API script, Save, and Enable.
 
 ### Optional Rollable Table Integration (when not using API):
@@ -42,20 +43,15 @@ To use Rollable Tables, create the following two tables in Roll20:
 - Name: Thorn | Table Items: __ (Weight 6); Cut (Weight 2)
 Then make sure the Enable Rollable Tables option is selected on the Settings tab (and API is disabled). 
 
-### API Commands (Pro Subscription Required):
-
-- `!grimwild [dice] [thorns] [attribute]` - Roll attribute dice with thorns, can roll without attribute as well for story/montage/assist rolls. 
-- `!grimpool [size]` - Roll a dice pool and calculate drops
-
 ## Current Files
 Head to the latest release for the most recent files. 
-- `grimwild_r20_v1.3.html` - Character sheet HTML layout and JavaScript
-- `grimwild_r20_v1.3.css` - Styling and roll template formatting
-- `grimwild-r20_v1.3api.js` - API script for enhanced rolling features
+- `Grimwild_r20_v1.4.html` - Character sheet HTML layout and JavaScript
+- `Grimwild_r20_v1.4.css` - Styling and roll template formatting
+- `GrimwildCompanion_v1.4.js` - API script for enhanced rolling features
 
 ## Game System
 
-This sheet is designed for **Grimwild** (v1.4), a tabletop RPG by Oddity Press. Find the free edition here: https://www.drivethrurpg.com/en/product/507201/grimwild-free-edition, or the full edition with extra chapters here: https://www.drivethrurpg.com/en/product/508618/grimwild-cinematic-fantasy-roleplaying. 
+This sheet is designed for **Grimwild** (v1.4), a tabletop RPG authored by J.D. Maxwell and published by Oddity Press. Find the free edition here: https://www.drivethrurpg.com/en/product/507201/grimwild-free-edition, or the full edition with extra chapters here: https://www.drivethrurpg.com/en/product/508618/grimwild-cinematic-fantasy-roleplaying. 
 
 ## Contributing
 
@@ -69,8 +65,8 @@ Other aspirational features I might add in the future (or would appreciate other
 - ~~Proper integration for those without API support~~
 - ~~More GM support in terms of managing multiple pools over time~~
 - More GM support in terms of managing suspense (could just be a macro tied to a resource item?)  
-- Giving players more guidance on Critical options. 
-- Hardcoded specific path abiltiies (e.g., Weapon Mastery's extra die effects)
+- ~~Giving players more guidance on Critical options.~~ 
+- ~~Hardcoded specific path abiltiies (e.g., Weapon Mastery's extra die effects)~~
 - Add in all talent/path options to select (or build in Compendium integration)
 - And of course fine-tuning layout/features as feedback comes in
 
